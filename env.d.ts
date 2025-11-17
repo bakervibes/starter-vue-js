@@ -1,6 +1,15 @@
 /// <reference types="vite/client" />
 
 /**
+ * Déclaration TypeScript pour les composants Vue
+ */
+declare module '*.vue' {
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent<object, object, unknown>
+  export default component
+}
+
+/**
  * Déclaration TypeScript pour les variables d'environnement Vite
  * Cela permet l'autocomplétion dans import.meta.env
  */

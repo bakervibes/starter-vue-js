@@ -1,11 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import AboutPage from '@/views/AboutPage.vue'
+import HomePage from '@/views/HomePage.vue'
+import NotFoundPage from '@/views/NotFoundPage.vue'
 import type { RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/views/HomePage.vue'),
+    component: HomePage,
     meta: {
       title: 'Home',
     },
@@ -13,7 +16,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/about',
     name: 'about',
-    component: () => import('@/views/AboutPage.vue'),
+    component: AboutPage,
     meta: {
       title: 'About',
     },
@@ -21,7 +24,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/:pathMatch(.*)*',
     name: 'not-found',
-    component: () => import('@/views/NotFoundPage.vue'),
+    component: NotFoundPage,
     meta: {
       title: '404 Not Found',
     },
