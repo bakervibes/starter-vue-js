@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header>Header</header>
+  <header class="p-4">Header</header>
 </template>
 
 <style scoped></style>

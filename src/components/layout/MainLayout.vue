@@ -7,7 +7,7 @@ import AppHeader from './AppHeader.vue'
   <div class="flex min-h-screen flex-col">
     <AppHeader />
 
-    <main class="flex-1 bg-gray-300">
+    <main class="flex-1 bg-gray-50 p-4">
       <slot />
     </main>
 
